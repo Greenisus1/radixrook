@@ -27,6 +27,6 @@ Bit-string decoding uses exact length as width, so `1` means signed -1 in one bi
 
 CLI accepts either --value or --bits, never both. --width is used only for --value; --base is used only for --value. JSON uses decimal strings for exact large values, not lossy floating numbers. Reports refuse overwrite. No persistent history. CLI errors exit 2, successful calculations exit 0.
 
-Root marker/version files are prepared locally only; no publication/store discovery asserted.
+Root marker/version files are published. The current public-only Pi App Store cannot discover private repositories; authenticated store support is not verified.
 
 17 tests cover roundtrips in all 35 bases, sign/zero, invalid prefixes/digits, two's-complement limits/overflow, one-bit cases, bit width preservation, export refusal and CLI. Linux tested, physical Pi/non-Linux platforms untested.

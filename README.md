@@ -30,3 +30,5 @@ CLI accepts either --value or --bits, never both. --width is used only for --val
 Root marker/version files are published. The current public-only Pi App Store cannot discover private repositories; authenticated store support is not verified.
 
 17 tests cover roundtrips in all 35 bases, sign/zero, invalid prefixes/digits, two's-complement limits/overflow, one-bit cases, bit width preservation, export refusal and CLI. Linux tested, physical Pi/non-Linux platforms untested.
+
+Fullscreen update: Store interactive launch uses terminal-sized board cells or wrapped full-terminal utility input/results with PgUp/PgDn scrolling. Original core rules and direct CLI commands remain unchanged. Ctrl+C cancels utility entry, result Enter returns; no new dependency downloads. Linux PTY resize/restoration checked; physical Pi untested.
